@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Template 3
+  body
+    h1 Using mixins and blocks
+    p This template uses a mixin with a block.
+
+    //- Define the mixin with a parameter
+    mixin statementMixin(statement)
+      if statement
+        p= statement
+      else
+        p This is the default statement.
+
+    //- Use the mixin with default content
+    +statementMixin()
+
+    //- Use the mixin with custom content
+    +statementMixin('This is a custom statement.')

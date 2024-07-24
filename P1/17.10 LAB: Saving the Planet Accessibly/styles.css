@@ -1,0 +1,99 @@
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 1rem;
+}
+
+header h4 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h1, section h2 {
+    font-size: 2rem;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+}
+
+form button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+form button:hover, form button:focus {
+    background-color: #003399;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Focus styles for keyboard navigation */
+a:focus, button:focus, span[role="link"]:focus {
+    outline: 2px solid #0044cc;
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

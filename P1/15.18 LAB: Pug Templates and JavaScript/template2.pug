@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title Template 2
+  body
+    h1 Using pug loops for JavaScript data
+    p This template loops through an array of states and populations.
+    ul
+      - const states = { 'California': 39538223, 'Texas': 29145505, 'Florida': 21538187, 'New York': 20201249, 'Pennsylvania': 13002700 }
+      each population, state in states
+        li #{state}: #{population}
+
