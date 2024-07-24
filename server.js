@@ -7,8 +7,20 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post('/submit', (req, res) => {
     const {name, email, password, age} = req.body
-    console.log(req.body)
+    const errors = validateForm(name, email, password, age)
+
+    if (errors.length > 0) {
+        res.send(`
+            ${errors.map(error => `<p class='error'>${error}</p>`).join('')}
+        `);
+    } else {
+        res.send(`
+            <p class='success'>Validation successful. Form data is valid.</p>
+        `);
+    }
 })
+
+
 function validateForm(name, email, password, age) {
     const errors = [];
 
