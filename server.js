@@ -3,7 +3,12 @@ const express = require('express')
 const app = express()
 
 app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }));
 
+app.post('/submit', (req, res) => {
+    const {name, email, password, age} = req.body
+    console.log(req.body)
+})
 function validateForm(name, email, password, age) {
     const errors = [];
 
